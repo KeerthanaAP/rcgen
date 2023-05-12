@@ -19,6 +19,9 @@ name = "rcgen"
 path = "src/main.rs"
 required-features = ["pem"]
 
+[patch.crates-io]
+ring = { git = "https://github.com/ibm/ring.git", branch = "ppc-0.16.20" }
+
 [dependencies]
 yasna = { version = "0.5.2", features = ["time", "std"] }
 ring = "0.16"
